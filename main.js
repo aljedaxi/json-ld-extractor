@@ -33,7 +33,7 @@ const main = async input => {
               const json = JSON.parse(value.join(''))
               const ary = Array.isArray(json) ? json : [json]
               const recipe = ary.find (o => o['@type']?.includes('Recipe'))
-              console.log(JSON.stringify(recipe))
+              if (recipe) console.log(JSON.stringify(recipe))
             } catch (e) {
               console.error(e)
             }
