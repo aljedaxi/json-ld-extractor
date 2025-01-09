@@ -1,0 +1,1 @@
+please note line 37, `find (o => o['@type']?.includes('Recipe')`—this repo has a general time cuz most of the functionality is there, but as long as that line exists it isn't being put to general use. beware &c.

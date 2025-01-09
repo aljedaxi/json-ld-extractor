@@ -32,6 +32,8 @@ const main = async input => {
             try {
               const json = JSON.parse(value.join(''))
               const ary = Array.isArray(json) ? json : [json]
+              // as it stands, i only care about recipes, but you can imagine a world where this is a command line flag
+              // or you can apply the old suckless methodology and change it in your uhhhhhh your uhh your fork
               const recipe = ary.find (o => o['@type']?.includes('Recipe'))
               if (recipe) console.log(JSON.stringify(recipe))
             } catch (e) {
